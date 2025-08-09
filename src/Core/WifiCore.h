@@ -14,10 +14,6 @@ public:
     void init() {
         WiFi.mode(WIFI_OFF);
         WiFi.persistent(false);
-        startMillis = millis();
-
-
-
         Routing.init();
     }
     void handle() {
@@ -34,7 +30,7 @@ public:
             Serial.println(WiFi.softAPIP());
         }
 
-        /*if (elapsed > 40000 && WiFi.getMode() == WIFI_AP) {
+        if (elapsed > 40000 && WiFi.getMode() == WIFI_AP) {
             Serial.println("⛔ Вимикаю точку доступу...");
             WiFi.mode(WIFI_MODE_NULL);
 
@@ -43,6 +39,6 @@ public:
             WiFi.enableAP(false);
 
             startMillis = millis();
-        }*/
+        }
     }
 };

@@ -1,0 +1,7 @@
+#include "U8g2lib.h"
+#include "Resources/Fonts.h"
+
+U8G2_ST7565_64128N_F_4W_HW_SPI display1(U8G2_R0, 38, 39, 40);
+U8G2_ST7565_64128N_F_4W_HW_SPI display2(U8G2_R0, 45, 47, 48);
+U8G2_ST7565_64128N_F_4W_HW_SPI display3(U8G2_R0, 43, 44, 1);
+U8G2_ST7565_64128N_F_4W_HW_SPI display4(U8G2_R0, 37, 21, 2);
