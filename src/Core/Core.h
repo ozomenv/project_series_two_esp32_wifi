@@ -20,8 +20,8 @@ class Core {
 public:
     static void init() {
         pinMode(35, OUTPUT);
-        //Wire.begin(42, 41);
-        //SPI.begin(14, -1, 13);
+        Wire.begin(42, 41);
+        SPI.begin(14, -1, 13);
         datetime.clockInit();
         encoder.encoderInit();
         settings.init();
